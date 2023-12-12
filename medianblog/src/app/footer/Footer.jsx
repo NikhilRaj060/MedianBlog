@@ -45,7 +45,7 @@ function Footer() {
                 <ul className="text-gray-600 dark:text-gray-400">
                   <li className="mb-4">
                     <a
-                      href="https://github.com/themesberg/flowbite"
+                      href="#"
                       className="hover:underline "
                     >
                       Linkedin
@@ -53,7 +53,7 @@ function Footer() {
                   </li>
                   <li className="mb-4">
                     <a
-                      href="https://discord.gg/4eeurUVvTy"
+                      href="#"
                       className="hover:underline"
                     >
                       Instagram
@@ -61,7 +61,7 @@ function Footer() {
                   </li>
                   <li>
                     <a href="#" className="hover:underline">
-                      facebook
+                      Facebook
                     </a>
                   </li>
                 </ul>
