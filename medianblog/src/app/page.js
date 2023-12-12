@@ -3,13 +3,16 @@ import Main from "./pages/Main";
 import Navbar from "./navbar/Navbar";
 import { ThemeProvider } from "next-themes";
 import Footer from "./footer/Footer";
+import { NextUIProvider } from "@nextui-org/react";
 
 export default function Home() {
   return (
-    <ThemeProvider enableSystem={false} attribute="class">
-      <Navbar></Navbar>
-      <Main></Main>
-      <Footer></Footer>
-    </ThemeProvider>
+    <NextUIProvider>
+      <ThemeProvider enableSystem={false} attribute="class">
+        <Navbar />
+        <Main></Main>
+        <Footer />
+      </ThemeProvider>
+    </NextUIProvider>
   );
 }
