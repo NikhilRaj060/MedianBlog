@@ -3,10 +3,10 @@ import Link from "next/link";
 import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { PiNotePencilDuotone } from "react-icons/pi";
-import ToggleButton from "./darkTheme/ToggleButton";
+import ToggleButton from "../darkTheme/ToggleButton";
 import { Button, Avatar } from "@nextui-org/react";
 
-function Navbar() {
+function Navbar({ loginHref }) {
   const [Navitem, showNavItem] = useState(false);
   const showNavbar = () => {
     showNavItem((prevState) => !prevState);
@@ -24,10 +24,8 @@ function Navbar() {
 
             <div>
               {isLoggedIn ? (
-                <Link href="/login" className="block md:hidden mt-0.5 mr-4">
-                  <Button color="gradient" auto ghost rounded bordered>
+                <Link href={loginHref} className="block md:hidden mt-0.5 mr-4">
                     Login
-                  </Button>
                 </Link>
               ) : (
                 <Avatar
@@ -70,10 +68,8 @@ function Navbar() {
 
             <div>
               {isLoggedIn ? (
-                <Link href="/login" className=" hidden md:block cursor-pointer">
-                  <Button color="gradient" auto ghost rounded bordered>
+                <Link href={loginHref} className=" hidden md:block cursor-pointer">
                     Login
-                  </Button>
                 </Link>
               ) : (
                 <Avatar
