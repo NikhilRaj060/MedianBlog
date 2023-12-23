@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import Layout from "@/app/_components/Layout";
+import Layout from "@/app/components/Layout";
 
 export default function Login() {
   return (
