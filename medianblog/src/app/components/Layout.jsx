@@ -5,7 +5,7 @@ import { NextUIProvider } from "@nextui-org/react";
 
 const Layout = ({ children }) => {
   // Set the href for the login link
-  const loginHref = "pages/login";
+  const loginHref = "auth/login";
   return (
     <>
       <NextUIProvider>
