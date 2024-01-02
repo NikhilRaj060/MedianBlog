@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React from "react";
 import SocialMediaSVG from "./SocialMediaSVG";
 
@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <>
-      <footer className="p-4 bg-gray-100 dark:bg-black mt-25 sm:p-6">
+      <footer className="p-5 bg-gray-100 dark:bg-black mt-25 sm:p-6">
         <div className="mx-auto max-w-screen-xl">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
