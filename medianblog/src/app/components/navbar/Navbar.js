@@ -1,17 +1,18 @@
-"use client";
 import Link from "next/link";
 import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { PiNotePencilDuotone } from "react-icons/pi";
-import ToggleButton from "../darkTheme/ToggleButton";
+import ThemeSwitcher from "../darkTheme/ThemeSwitcher";
 import { Button, Avatar } from "@nextui-org/react";
 
 function Navbar({ loginHref }) {
   const [Navitem, showNavItem] = useState(false);
+
   const showNavbar = () => {
     showNavItem((prevState) => !prevState);
   };
-  const isLoggedIn = true;
+  const isLoggedIn = false;
+
   return (
     <>
       <header className="bg-gray-100 dark:bg-black p-5 justify-between fixed top-0 md:flex w-full z-0 box-border h-16">
@@ -19,7 +20,7 @@ function Navbar({ loginHref }) {
           <h2 className="text-xl font-bold">Median Blog</h2>
           <div className="flex justify-between">
             <div className="md:hidden block mr-4">
-              <ToggleButton />
+              <ThemeSwitcher />
             </div>
 
             <div>
@@ -47,7 +48,7 @@ function Navbar({ loginHref }) {
 
         <div className="mr-8 md:space-x-6 mt-3 md:mt-0 md:flex">
           <div className="hidden md:block">
-            <ToggleButton />
+            <ThemeSwitcher />
           </div>
 
           <div
