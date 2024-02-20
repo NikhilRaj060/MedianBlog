@@ -1,11 +1,13 @@
 "use client";
-import Main from "./pages/Main";
 import Layout from "./components/layout";
+import MainPage from "./components/homePage/MainPage";
 
 export default function Home() {
   return (
     <Layout>
-      <Main></Main>
+      <div>
+        <MainPage/>
+      </div>
     </Layout>
         
   );

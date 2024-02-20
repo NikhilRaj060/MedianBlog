@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { FiSun, FiMoon } from "react-icons/fi";
+import { Button } from "@nextui-org/react";
 
 function ToggleButton() {
   const [mounted, setMounted] = useState(false)
@@ -15,23 +16,21 @@ function ToggleButton() {
   if(!mounted) return null
  
   return (
-    <div className="mt-0 md:-mt-1">
+    <>
       {currentTheme === "dark" ? (
-        <button
-          className="bg-gray-100 p-2 rounded-full dark:bg-[#ef8253]"
-          onClick={() => setTheme("light")}
-        >
+        <Button isIconOnly
+          className="bg-gray-100 rounded-full dark:bg-[#ef8253]"
+          onClick={() => setTheme("light")}>
           <FiSun alt="logo" height={30} width={30}className="dark:text-white" />
-        </button>
+        </Button>
       ) : (
-        <button
-          className="bg-gray-300 p-2 rounded-full dark:bg-[#ef8253]"
-          onClick={() => setTheme("dark")}
-        >
+        <Button isIconOnly
+          className="bg-gray-300 rounded-full dark:bg-[#ef8253]"
+          onClick={() => setTheme("dark")}>
           <FiMoon alt="logo" height={10} width={10} />
-        </button>
+        </Button>
       )}
-    </div>
+    </>
   );
 }
 
