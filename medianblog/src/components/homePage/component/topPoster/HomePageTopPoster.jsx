@@ -51,7 +51,6 @@ export default function HomePageTopPoster() {
                         width={2000}
                         height={2000}
                         className="w-full h-full"
-                        priority={true}
                     />
                 </div>
 
@@ -60,7 +59,7 @@ export default function HomePageTopPoster() {
                     alt="stars"
                     height={300}
                     width={300}
-                    className="w-auto absolute top-0 left-0 z-[10]"
+                    className="absolute top-0 left-0 z-[10]"
                 />
             </div>
         </>
