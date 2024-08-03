@@ -15,7 +15,7 @@ export default function HomePageTopPoster() {
                             Explore boundless horizons across diverse categories with
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
                                 {" "}
-                                Our reach content.
+                                Our rich content.
                             </span>
                         </h1>
                         <p className="text-gray-200 m-0 font-thin text-xl">
